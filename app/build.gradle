@@ -12,6 +12,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters 'armeabi-v7a', 'x86'
+        }
+
     }
 
     buildTypes {
@@ -29,4 +34,6 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.1.0'
 
+    implementation project(':unityLibrary')
+    implementation fileTree(dir: project(':unityLibrary').getProjectDir().toString() + ('\\libs'), include: ['*.jar'])
 }

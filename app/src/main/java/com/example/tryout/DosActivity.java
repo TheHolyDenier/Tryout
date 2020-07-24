@@ -1,6 +1,5 @@
 package com.example.tryout;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
